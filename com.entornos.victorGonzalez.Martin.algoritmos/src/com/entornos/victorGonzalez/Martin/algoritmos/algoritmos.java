@@ -1,7 +1,7 @@
 package com.entornos.victorGonzalez.Martin.algoritmos;
 
 /**
- * @version 1.2
+ * @version 1.3
  * 
  * @author Victor
  */
@@ -14,7 +14,7 @@ public abstract class algoritmos {
 	 * 
 	 * @return devuelve el numero fibonacci de dicho numero.
 	 */
-	public int fibonacci(long numero) {
+	public static int fibonacci(long numero) {
 		int siguiente = 1, actual = 0, temporal = 0;
 		for (int x = 1; x <= numero; x++) {
 			System.out.print(actual + ", ");
@@ -32,7 +32,7 @@ public abstract class algoritmos {
 	 * 
 	 * @return devuelve el factorial de dicho numero.
 	 */
-	public double factorial(long numero) {
+	public static double factorial(long numero) {
 		double res = 1;
 		for (int i = 1; i <= numero; i++) {
 			res = res * i;
