@@ -11,12 +11,12 @@ public class Principal extends algoritmos {
 		for (int i = 0; i < numeros.length; i++) {
 			numeros[i] = (int) ((Math.random() * (20 - 1 + 1)) + 1);
 		}
-		/* Apartado 1 */
+		/* Apartado 2 */
 		for (int i = 0; i < numeros.length; i++) {
 			resultadoFibonacci[i] = algoritmos.fibonacci(numeros[i]);
 		}
 		
-		/* Apartado 2 */
+		/* Apartado 3 */
 		for (int i = 0; i < numeros.length; i++) {
 			resultadoFactorial[i] = algoritmos.factorial(numeros[i]);
 		}
