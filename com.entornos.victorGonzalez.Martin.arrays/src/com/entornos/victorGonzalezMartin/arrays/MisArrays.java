@@ -3,7 +3,7 @@ package com.entornos.victorGonzalezMartin.arrays;
 import java.util.Arrays;
 
 /**
- * @version 1.1
+ * @version 1.2
  * 
  * @author Victor
  */
@@ -37,7 +37,6 @@ public abstract class MisArrays {
 
 	public static double mediana(int[] array) {
 		Arrays.sort(array);
-
 		double mediana = 0.0;
 		int mitad = array.length / 2;
 		if (array.length % 2 == 0) {
@@ -46,6 +45,24 @@ public abstract class MisArrays {
 			mediana = array[mitad];
 		}
 		return mediana;
+	}
+
+	/**
+	 * Recibe un array de números enteros y devuelve el valor máximo de dicho array.
+	 * 
+	 * @param array de números enteros
+	 * 
+	 * @return devuelve el valor máximo de dicho array.
+	 */
+
+	public static int maximo(int[] array) {
+		int numMax = array[0];
+		for (int i = 1; i < array.length; i++) {
+			if (numMax < array[i]) {
+				numMax = array[i];
+			}
+		}
+		return numMax;
 	}
 
 }
