@@ -72,13 +72,13 @@ public abstract class MisArrays {
 	 */
 	
 	public static int minimo(int[] array) {
-		int nummin = array[0];
+		int numMin = array[0];
 		for (int i = 1; i < array.length; i++) {
-			if (nummin > array[i]) {
-				nummin = array[i];
+			if (numMin > array[i]) {
+				numMin = array[i];
 			}
 		}
-		return nummin;
+		return numMin;
 	}
 
 }
