@@ -10,8 +10,7 @@ import java.util.Arrays;
 public abstract class MisArrays {
 
 	/**
-	 * Recibe un array de números enteros y devuelve la media con decimales de dicho
-	 * array.
+	 * Recibe un array de números enteros y devuelve la media con decimales de dicho array.
 	 * 
 	 * @param array de números enteros
 	 * 
@@ -27,8 +26,7 @@ public abstract class MisArrays {
 	}
 
 	/**
-	 * Recibe un array de números enteros y devuelve la mediana con decimales de
-	 * dicho array.
+	 * Recibe un array de números enteros y devuelve la mediana con decimales de dicho array.
 	 * 
 	 * @param array de números enteros
 	 * 
@@ -63,6 +61,24 @@ public abstract class MisArrays {
 			}
 		}
 		return numMax;
+	}
+
+	/**
+	 * Recibe un array de números enteros y devuelve el valor mínimo de dicho array.
+	 * 
+	 * @param array de números enteros
+	 * 
+	 * @return devuelve el valor mínimo de dicho array.
+	 */
+	
+	public static int minimo(int[] array) {
+		int nummin = array[0];
+		for (int i = 1; i < array.length; i++) {
+			if (nummin > array[i]) {
+				nummin = array[i];
+			}
+		}
+		return nummin;
 	}
 
 }
